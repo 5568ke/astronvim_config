@@ -15,13 +15,15 @@ return {
       end,
       desc = "Pick to close",
     },
+    ["<c-t>"]={":ToggleTerm<cr>"},
+    ["<c-d>"]={":LazyDocker<cr>"},
     -- tables with the `name` key will be registered with which-key if it's installed
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
     ["<c-l>"]={":bnext<cr>"},
-    ["<c-h>"]={":bprev<cr>"}
+    ["<c-h>"]={":bprev<cr>"},
   },
   t = {
     -- setting a mapping to false will disable it
